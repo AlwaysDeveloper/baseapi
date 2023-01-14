@@ -1,0 +1,39 @@
+{
+  "name": "api",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "NODE_ENV=test ./node_modules/.bin/mocha --recursive --exit",
+    "dev": "NODE_ENV=development nodemon index.js",
+    "autotest": "NODE_ENV=test ./node_modules/.bin/supervisor -q -n exit -x ./node_modules/.bin/mocha -- --recursive"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "chai": "^4.3.7",
+    "eslint": "^8.31.0",
+    "eslint-plugin-chai-friendly": "^0.7.2",
+    "eslint-plugin-import": "^2.26.0",
+    "eslint-plugin-mocha": "^10.1.0",
+    "factory-girl": "^5.0.4",
+    "mocha": "^10.2.0",
+    "nodemon": "^2.0.20",
+    "sequelize-cli": "^6.5.2",
+    "sinon": "^15.0.1",
+    "sinon-chai": "^3.7.0"
+  },
+  "dependencies": {
+    "@mvp-rockets/namma-lib": "^1.2.0-beta.4",
+    "async": "^3.2.4",
+    "axios": "^1.2.2",
+    "body-parser": "^1.20.1",
+    "config": "^3.3.8",
+    "cookie-parser": "^1.4.6",
+    "cors": "^2.8.5",
+    "express": "^4.18.2",
+    "folktale": "^2.3.2",
+    "ramda": "^0.28.0",
+    "sequelize": "^6.28.0"
+  }
+}
