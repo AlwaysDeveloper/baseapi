@@ -7,6 +7,7 @@ const config = require("config");
 const Router = require("./lib/router");
 const ApiError = require("@mvp-rockets/namma-lib/src/lib/utilities/api-error");
 const ValidationError = require("./lib/validationerror");
+const { token } = require("@mvp-rockets/namma-lib");
 
 app.use(cors())
 app.use(bodyParser.json());
@@ -18,6 +19,8 @@ Router.setApp(app, {
         includes: ['src']
     }
 });
+
+token.initialize(config.JWT_SECRET);
 
 app.use((request, response, next) => {
     next(new ApiError("NOT_FOUND", "Resource not found!", 404));
