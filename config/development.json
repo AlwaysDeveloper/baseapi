@@ -1,4 +1,5 @@
 {
     "PORT": 3000,
+    "SOCKET_PORT": 3001,
     "JWT_SECRET": "This is just jwt secret"
 }

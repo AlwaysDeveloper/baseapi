@@ -8,6 +8,7 @@ const Router = require("./lib/router");
 const ApiError = require("@mvp-rockets/namma-lib/src/lib/utilities/api-error");
 const ValidationError = require("./lib/validationerror");
 const { token } = require("@mvp-rockets/namma-lib");
+const io = require("./socket");
 
 app.use(cors())
 app.use(bodyParser.json());
