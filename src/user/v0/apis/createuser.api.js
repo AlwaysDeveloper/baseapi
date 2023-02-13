@@ -1,5 +1,5 @@
 const { respond } = require("@mvp-rockets/namma-lib/utilities");
-const Route = require("../../../lib/route");
+const Route = require("../../../../lib/route");
 const CreateUserService = require("../services/createUser.service");
 
 new Route({

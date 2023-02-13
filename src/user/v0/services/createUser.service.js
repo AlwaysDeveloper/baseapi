@@ -1,6 +1,6 @@
 const { composeResult } = require("@mvp-rockets/namma-lib/utilities");
 const CreateUserValidator = require("../validations/createUser.validation");
-const { execute } = require("../../../models");
+const { execute } = require("../../../../models");
 const CreateUserQuery = require("../queries/createUser.query");
 
 module.exports = async (userData) => composeResult(

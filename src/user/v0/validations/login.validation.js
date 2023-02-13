@@ -1,5 +1,5 @@
 const validate = require("@mvp-rockets/namma-lib/src/lib/validations/validate");
-const { isNonEmpty, isEmail } = require("../../../lib/validators");
+const { isNonEmpty, isEmail } = require("../../../../lib/validators");
 
 module.exports = async data => validate(
     {
